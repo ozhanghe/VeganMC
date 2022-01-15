@@ -78,6 +78,14 @@ public class VeganFoods
         {
             item = true;
         }
+        else if(food.is(Items.SUSPICIOUS_STEW))
+        {
+            item = true;
+        }
+        else if(food.is(Items.GOLDEN_CARROT))
+        {
+            item = true;
+        }
 
         return item;
     }

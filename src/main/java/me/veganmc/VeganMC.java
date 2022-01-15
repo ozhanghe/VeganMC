@@ -1,5 +1,8 @@
 package me.veganmc;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.vehicle.Minecart;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
@@ -57,7 +60,10 @@ public class VeganMC
     {
         if(e.getSource().getEntity() != null)
         {
-            e.getSource().getEntity().kill();
+            if(e.getSource().getEntity() instanceof Player)
+            {
+                e.getSource().getEntity().kill();
+            }
         }
     }
 }
