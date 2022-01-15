@@ -74,10 +74,6 @@ public class VeganFoods
         {
             item = true;
         }
-        else if(food.is(Items.HONEY_BOTTLE))
-        {
-            item = true;
-        }
         else if(food.is(Items.SUSPICIOUS_STEW))
         {
             item = true;
